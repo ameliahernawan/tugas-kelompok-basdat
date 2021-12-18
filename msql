@@ -1,0 +1,55 @@
+//untuk tabel daftar matkul
+
+CREATE TABLE Mata_kuliah(
+IDmk Char(1) NOT NULL,
+Mata_kuliah VARCHAR(20) NOT NULL);
+
+INSERT INTO mata_kuliah VALUES('A','Matematika'); 
+INSERT INTO mata_kuliah VALUES('B','Bahasa Indonesia'); 
+INSERT INTO mata_kuliah VALUES('C','Bahasa Inggris'); 
+INSERT INTO mata_kuliah VALUES('D','Kimia'); 
+INSERT INTO mata_kuliah VALUES('E','Biologi'); 
+INSERT INTO mata_kuliah VALUES('F','Fisika'); 
+
+//untuk tabel daftar tutor
+(disini masih ada yg salah untuk constraintnya tapi gapaham salahnya yang mana, tolong cek dong)
+CREATE TABLE Tutor(
+IDTutor INT NOT NULL,
+IDMatkul CHAR NOT NULL,
+Nama_Tutor VARCHAR(20) NOT NULL,
+Waktu TIME,
+CONSTRAINT Tutor_IDMatkul_PK PRIMARY KEY(IDMatkul),
+CONSTRAINT Tutor_IDMatkul_FK FOREIGN KEY(IDMatkul) REFERENCES Mata_kuliah(IDmk));
+
+INSERT INTO Tutor VALUES('01', 'A', 'Tony Stark',’09:00-18:00’);
+INSERT INTO Tutor VALUES('02', 'A', 'Clint Barton',’09:00-18:00’);
+INSERT INTO Tutor VALUES('03', 'A', 'Vision',’09:00-18:00’);
+INSERT INTO Tutor VALUES('04', 'A', ''Nick Furry,’08:00-17:00’);
+INSERT INTO Tutor VALUES('05', 'A', 'Shuri',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'B', 'Natasha Romanoff',’09:00-18:00’);
+INSERT INTO Tutor VALUES('07', 'B', 'James Rhodes',’09:00-18:00’);
+INSERT INTO Tutor VALUES('08', 'B', 'Peter Quill',’08:00-17:00’);
+INSERT INTO Tutor VALUES('09', 'B', 'Gamora',’10:00-19:00’);
+INSERT INTO Tutor VALUES('10', 'B', 'Groot',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'C', 'Thor Odinson',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'C', 'Wanda Maximoff',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'C', 'Bucky Barnes',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'C', 'Carol Danvers',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'C', 'Drax',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Steve Rogers',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Peter Parker',’10:00-19:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Nick Fury',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Maria Hill',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Okoye',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'E', 'Bruce Banner',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'E', 'Mantis',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'E', 'Stephen Strange',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'E', 'Pietro Maximoff',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'E', 'Loki Odinson',’10:00-19:00’);
+INSERT INTO Tutor VALUES('06', 'F', 'Sam Wilson',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'F', 'Rocket',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'F', 'Nebula',’09:00-18:00’);
+INSERT INTO Tutor VALUES('06', 'F', 'T’Challa',’08:00-17:00’);
+INSERT INTO Tutor VALUES('06', 'F', 'Scott Lang',’09:00-18:00’);
+
+
