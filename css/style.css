@@ -1,0 +1,108 @@
+html, body, ul {
+    font-family: "Nunito";
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 70px;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+nav .wrapper-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+}
+
+nav .wrapper-menu .menu {
+    width: 100%;
+    padding: 0 223px;
+}
+
+
+nav .wrapper-menu .menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: black;
+    font-size: 1.8em;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 85px 0 81px;
+}
+
+
+section#home{
+    margin-top: 45px;
+    width: 50%;
+}
+
+section#home .kolom h1{
+    font-weight: 400;
+    font-size: 6em;
+    line-height: 121px;
+    margin-top: 100px;
+    margin-bottom: 21px;
+}
+
+section#home .kolom p {
+    font-weight: 400;
+    font-size: 1.47em;
+    line-height: 36px;
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.kolom p span {
+    font-weight: 700;
+}
+
+.kolom .tombol {
+    box-sizing: border-box;
+    padding: 14px 68px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 2.4em;
+    border-radius: 8px;
+    margin-top: 21px;
+    display: inline-block;
+}
+
+section#image_hero{
+    position: relative;
+    width: 50%;
+}
+
+#image_hero img{
+    width: 115%;
+    position: absolute;
+    left: -55px;
+}
