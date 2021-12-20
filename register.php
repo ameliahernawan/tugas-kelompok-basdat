@@ -1,14 +1,14 @@
-<?php
+<?
 $host = "localhost";
 $port = "5432";
-$dbname = "tutor4u";
+$dbname = "test";
 $user = "postgres";
-$password = "rumahjoglo01"; 
+$password = "postgres"; 
 $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
 $dbconn = pg_connect($connection_string);
 if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     
-      $sql = "insert into public.user(name,password,mobno)values('".$_POST['name']."','".md5($_POST['pwd'])."','".$_POST['mobno']."')";
+      $sql = "insert into public.user(name,nim,password)values('".$_POST['name']."','".$_POST['nim']."','".md5($_POST['pwd'])."')";
     $ret = pg_query($dbconn, $sql);
     if($ret){
         
@@ -18,7 +18,7 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
             echo "Something Went Wrong";
     }
 }
-?>
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,8 +41,8 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     </div>
     
     <div class="form-group">
-      <label for="pwd">Mobile No:</label>
-      <input type="number" class="form-control" maxlength="10" id="mobileno" placeholder="Enter Mobile Number" name="mobno">
+      <label for="nim">NIM:</label>
+      <input type="nim" class="form-control" id="nim" placeholder="Enter nim" name="nim">
     </div>
     
     <div class="form-group">
