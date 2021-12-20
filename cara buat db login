@@ -1,5 +1,11 @@
-CREATE TABLE users (
-    nim VARCHAR(255) NOT NULL PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
-);
+CREATE TABLE public."user"
+(
+   id serial, 
+   name VARCHAR(250), 
+   nim VARCHAR(250) UNIQUE, 
+   password VARCHAR(250)
+) 
+WITH (
+  OIDS = FALSE
+)
+;
