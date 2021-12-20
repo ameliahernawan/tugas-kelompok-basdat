@@ -39,6 +39,9 @@
 			<label for="tutor 5">Tutor 5: </label>
 			<input type="text" name="tutor 5" />
 		</p>
+	<p>
+			<input type="submit" value="Daftar" name="daftar" />
+		</p>
 
 		</fieldset>
 	</form>
