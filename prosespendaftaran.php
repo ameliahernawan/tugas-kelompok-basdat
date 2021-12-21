@@ -9,13 +9,7 @@ if(isset($_POST['daftar'])){
 	$tutor = $_POST['tutor'];
 
 
-	$check = pg_query("IF EXISTS (SELECT * FROM siswa WHERE nim = $nim)
-	BEGIN
-	die("sudah terdaftar . . ."
-	END
-	else
-	BEGIN
-	$query = pg_query("INSERT INTO siswa (nama, nim) VALUEs ('$nama', '$nim')");
+	$query = pg_query("INSERT INTO siswa (nama, nim, IDtutor) VALUEs ('$nama', '$nim','$tutor')");
   
 	  // apakah query simpan berhasil?
 	  if( $query==TRUE ) {
@@ -23,8 +17,8 @@ if(isset($_POST['daftar'])){
 		  header('Location: index.php?status=sukses');
 	  } else {
 		  // kalau gagal alihkan ke halaman indek.ph dengan status=gagal
-		  header('Location: index.php?status=gagal');
-	  }")
+		  echo"gagal mendaftar";
+	  }
 
 } else {
 	die("Akses dilarang...");
