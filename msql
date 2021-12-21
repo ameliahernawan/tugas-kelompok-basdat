@@ -24,7 +24,7 @@ CONSTRAINT Tutor_IDMatkul_FK FOREIGN KEY(IDMatkul) REFERENCES Mata_kuliah(IDmk))
 INSERT INTO Tutor VALUES('01', 'A', 'Tony Stark',’16:00-22:00’);
 INSERT INTO Tutor VALUES('02', 'A', 'Clint Barton',’16:00-22:00’);
 INSERT INTO Tutor VALUES('03', 'A', 'Vision',’16:00-22:00’);
-INSERT INTO Tutor VALUES('04', 'A', ''Nick Furry,’15:00-21:00’);
+INSERT INTO Tutor VALUES('04', 'A', 'Nick Furry',’15:00-21:00’);
 INSERT INTO Tutor VALUES('05', 'A', 'Shuri',’15:00-21:00’);
 INSERT INTO Tutor VALUES('06', 'B', 'Natasha Romanoff',’16:00-22:00’);
 INSERT INTO Tutor VALUES('07', 'B', 'James Rhodes',’16:00-22:00’);
@@ -38,7 +38,7 @@ INSERT INTO Tutor VALUES('06', 'C', 'Carol Danvers',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'C', 'Drax',’15:00-21:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Steve Rogers',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Peter Parker',’14:00-20:00’);
-INSERT INTO Tutor VALUES('06', 'D', 'Nick Fury',’16:00-22:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Yelena Romanoff',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Maria Hill',’15:00-21:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Okoye',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'E', 'Bruce Banner',’16:00-22:00’);
