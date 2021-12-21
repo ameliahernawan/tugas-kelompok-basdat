@@ -8,7 +8,7 @@ if(isset($_POST['hapus'])){
 	$tutor = $_POST['tutor'];
 
 
-	$query = pg_query("DELETE FROM mahasiswa WHERE idtutor = '$tutor' WHERE NIM='$nim'")
+	$query = pg_query("DELETE FROM mahasiswa WHERE idtutor = '$tutor' WHERE NIM='$nim'");
   
 	  // apakah query simpan berhasil?
 	  if( $query==TRUE ) {
