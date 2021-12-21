@@ -31,7 +31,7 @@
                 <h1 class="deskripsi">Butuh tutor pribadi untuk belajar?</h1>
                 <p><span>Tutor4u</span> hadir sebagai sarana untuk mahasiswa yang kesulitan memahami pelajaran selama masa sekolah online ini.</p>
                 <!--dari sini ntar masuk ke halaman login-->
-                <a href="" class="tombol">Coba Sekarang</a>
+                <a href="daftar.php" class="tombol">Coba Sekarang</a>
             </div>
             <!-- <img src="E:\ilkom\Basdat\tugas kelompok\home.png"> -->
         </section>
@@ -41,3 +41,12 @@
     </div>
 </body>
 </html>
+<?php if(isset($_GET['status'])): ?>
+	<p>
+		<?php
+			if($_GET['status'] == 'sukses'){
+				echo "Pendaftaran tutor berhasil!";
+			}
+		?>
+	</p>
+	<?php endif; ?>
