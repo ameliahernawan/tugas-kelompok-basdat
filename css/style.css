@@ -42,6 +42,9 @@ nav .wrapper-menu .menu ul{
     list-style: none;
 }
 
+.menu .logo {
+    width: 13%;
+}
 .menu ul li a {
     color: black;
     font-size: 1.8em;

@@ -15,6 +15,7 @@
             <div class="menu">
                 <ul>
                     <!--untuk menu yang diatas-->
+                    <li><img class="logo" src="img/logoTutor4u.png" alt=""></li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#aboutus">About us</a></li>
                     <li><a href="#testimoni">Testimoni</a></li>
