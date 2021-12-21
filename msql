@@ -16,7 +16,7 @@ CREATE TABLE mahasiswa(
 NIM CHAR(255) NOT NULL,
 username VARCHAR(100) NOT NULL,
 pilihmatkul varchar(100),
-IDtutor int(11) NOT NULL,
+IDtutor CHAR(10) NOT NULL,
 pilihtutor varchar(100),
 mulai TIME,
 selesai TIME,
