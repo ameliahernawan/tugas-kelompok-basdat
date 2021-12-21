@@ -1,4 +1,4 @@
-html, body, ul {
+html, body{
     font-family: "Nunito";
     width: 100vw;
     height: 100vh;
@@ -16,22 +16,18 @@ a {
     text-decoration: none;
 }
 
-nav {
-    padding-top: 70px;
-    box-sizing: border-box;
-    height: 100px;
-}
-
-nav .wrapper-menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: 0 !important;
-}
-
 nav .wrapper-menu .menu {
     width: 100%;
-    padding: 0 223px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    /* margin: 0 !important; */
+    box-sizing: border-box;
+    height: 120px;
+}
+
+.menu .logo{
+    width: 110px;
 }
 
 
@@ -40,11 +36,10 @@ nav .wrapper-menu .menu ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
+    height:100%;
 }
 
-.menu .logo {
-    width: 13%;
-}
 .menu ul li a {
     color: black;
     font-size: 1.8em;
@@ -83,7 +78,7 @@ section#home .kolom p {
     margin-bottom: 20px;
 }
 
-.kolom p span {
+p span, h1 span {
     font-weight: 700;
 }
 
@@ -108,4 +103,25 @@ section#image_hero{
     width: 115%;
     position: absolute;
     left: -55px;
+}
+
+#image_about_us {
+    width: 90%;
+}
+
+.about_us .body h1{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 95px;
+    margin-bottom: 54px;
+}
+
+.about_us .body p{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+}
+
+.about_us .body {
+    margin-top: 65px;
 }
