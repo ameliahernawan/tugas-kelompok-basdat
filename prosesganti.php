@@ -8,7 +8,7 @@ if(isset($_POST['daftar'])){
 	$tutor = $_POST['tutor'];
 
 
-	$query = pg_query("UPDATE mahasiswa SET IDtutor = $tutor WHERE nim=$nim");
+	$query = pg_query("UPDATE mahasiswa SET idtutor = '$tutor' WHERE NIM='$nim'");
   
 	  // apakah query simpan berhasil?
 	  if( $query==TRUE ) {
