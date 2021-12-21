@@ -1,11 +1,11 @@
 CREATE TABLE public."user"
 (
    id serial, 
-   name VARCHAR(250), 
-   nim VARCHAR(250) UNIQUE, 
-   password VARCHAR(250)
+   name character varying(250), 
+   email character varying(250), 
+   password character varying(250), 
+   CONSTRAINT id PRIMARY KEY (id)
 ) 
 WITH (
   OIDS = FALSE
 )
-;
