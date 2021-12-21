@@ -1,6 +1,6 @@
 <?php require_once "template/headContent.php" ?>
 <div class="container daftar">
-  <form class="left" action="proseshapus.php" method="POST">
+  <form class="left" action="hapus.php" method="POST">
     <div>
 		<h1>Selamat Datang di <span>Tutor4u</span></h1>
 		<hr>
@@ -16,4 +16,3 @@
   </div>
 </div>
 <?php require_once "template/footer.php" ?>
-
