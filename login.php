@@ -1,19 +1,14 @@
-<?
-$host = "localhost";
-$port = "5432";
-$dbname = "tutor4u";
-$user = "postgres";
-$password = "rumahjoglo01"; 
-$connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
-$dbconn = pg_connect($connection_string);
+<?php
+include("config.php");
 if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     
     $hashpassword = md5($_POST['pwd']);
-    $sql ="select *from public.user where nim = '".pg_escape_string($_POST['nim'])."' and password ='".$hashpassword."'";
-    $data = pg_query($dbconn,$sql); 
+    $sql ="select *from public.user where email = '".pg_escape_string($_POST['email'])."' and password ='".$hashpassword."'";
+    $data = pg_query($sql); 
     $login_check = pg_num_rows($data);
     if($login_check > 0){ 
-        header('Location: index.php?status=sukses');;    
+        
+        header('Location: index.php');    
     }else{
         
         echo "Invalid Details";
@@ -36,8 +31,8 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
   
      
     <div class="form-group">
-      <label for="nim">NIM:</label>
-      <input type="nim" class="form-control" id="nim" placeholder="Enter nim" name="nim">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
     
      
@@ -47,6 +42,10 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     </div>
      
     <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+    </div>
+            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+        </form>
+    </div>
   </form>
 </div>
 </body>
