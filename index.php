@@ -28,7 +28,7 @@
         <section id="home">
             <div class="kolom">
                 <h1 class="deskripsi">Butuh tutor pribadi untuk belajar?</h1>
-                <p><span>Tutorin</span> hadir sebagai sarana untuk mahasiswa yang kesulitan memahami pelajaran selama masa sekolah online ini.</p>
+                <p><span>Tutor4u</span> hadir sebagai sarana untuk mahasiswa yang kesulitan memahami pelajaran selama masa sekolah online ini.</p>
                 <!--dari sini ntar masuk ke halaman login-->
                 <a href="" class="tombol">Coba Sekarang</a>
             </div>
