@@ -38,7 +38,7 @@ INSERT INTO Tutor VALUES('06', 'C', 'Carol Danvers',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'C', 'Drax',’15:00-21:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Steve Rogers',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Peter Parker',’14:00-20:00’);
-INSERT INTO Tutor VALUES('06', 'D', 'Yelena Romanoff',’16:00-22:00’);
+INSERT INTO Tutor VALUES('06', 'D', 'Yelena Belova',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Maria Hill',’15:00-21:00’);
 INSERT INTO Tutor VALUES('06', 'D', 'Okoye',’16:00-22:00’);
 INSERT INTO Tutor VALUES('06', 'E', 'Bruce Banner',’16:00-22:00’);
