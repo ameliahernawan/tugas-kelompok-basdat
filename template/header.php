@@ -16,8 +16,8 @@
                 <img class="logo" src="img/logoTutor4u.png" alt="">
                 <ul>
                     <!--untuk menu yang diatas-->
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about_us.php">About us</a></li>
                     <li><a href="#testimoni">Testimoni</a></li>
                     <li><a href="#harga">Harga</a></li>
                     <li><a href="#tutor">Tutor</a></li>
