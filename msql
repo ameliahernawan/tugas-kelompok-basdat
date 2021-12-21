@@ -19,8 +19,8 @@ username VARCHAR(100) NOT NULL,
 pilihmatkul varchar(100),
 IDtutor CHAR(10) NOT NULL,
 pilihtutor varchar(100),
-mulai TIME,
-selesai TIME,
+waktumulai TIME,
+waktuselesai TIME,
 platform varchar(100),
 CONSTRAINT mahasiswa_NIM_PK PRIMARY KEY(NIM),
 CONSTRAINT mahasiswa_IDtutor_FK FOREIGN KEY(IDtutor) REFERENCES tutor(idtutor));
@@ -56,4 +56,5 @@ INSERT INTO Tutor VALUES('28F','Fisika','Nebula','16:00','22:00');
 INSERT INTO Tutor VALUES('29F','Fisika','TChalla','15:00','21:00');
 INSERT INTO Tutor VALUES('30F','Fisika','Scott Lang','16:00','22:00');
 
-
+alter table tutor rename column mulai to start;
+alter table tutor rename column selesai to finish;
