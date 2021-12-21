@@ -22,6 +22,23 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include("config.php");
+if(isset($_POST['submit'])&&!empty($_POST['submit'])){
+    
+      $sql = "insert into public.user(name,email,password)values('".$_POST['name']."','".$_POST['email']."','".md5($_POST['pwd'])."')";
+    $ret = pg_query($sql);
+    if($ret){
+            
+        header('Location: login.php');
+    }else{
+        
+            echo "Soething Went Wrong";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>PHP PostgreSQL Registration & Login Example </title>
   <meta name="keywords" content="PHP,PostgreSQL,Insert,Login">
@@ -30,7 +47,6 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="container">
   <h2>Register Here </h2>
   <form method="post">
@@ -41,8 +57,8 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     </div>
     
     <div class="form-group">
-      <label for="nim">NIM:</label>
-      <input type="nim" class="form-control" id="nim" placeholder="Enter nim" name="nim">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
     
     <div class="form-group">
@@ -51,8 +67,12 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     </div>
      
     <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+
+    </div>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+        </form>
+    </div>    
   </form>
 </div>
-
 </body>
 </html>
