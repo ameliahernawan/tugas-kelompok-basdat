@@ -1,26 +1,19 @@
-<?php
-include("config.php");
-// cek apakah tombol daftar sudah diklik atau blum?
-if(isset($_POST['hapus'])){
+<?php require_once "template/headContent.php" ?>
+<div class="container daftar">
+  <form class="left" action="proseshapus.php" method="POST">
+    <div>
+		<h1>Selamat Datang di <span>Tutor4u</span></h1>
+		<hr>
+		<div class="form-group">
+			<label for="nim">NIM</label>
+			<input type="text" name="nim" />
+		</div>
+		<button type="submit" name="hapus">Hapus</button>
+    </div>
+  </form>
+  <div class="right" style="align-items:center;">
+	  <img style="width: 90%;" src="img/SignUpbb.png" alt="">
+  </div>
+</div>
+<?php require_once "template/footer.php" ?>
 
-	// ambil data dari formulir
-	$nim = $_POST['nim'];
-	$tutor = $_POST['tutor'];
-
-
-	$query = pg_query("DELETE FROM mahasiswa WHERE idtutor = '$tutor' WHERE NIM='$nim'");
-  
-	  // apakah query simpan berhasil?
-	  if( $query==TRUE ) {
-		  $up = pg_query("DELETE FROM mahasiswa SET IDtutor = Tutor.idtutor");
-		  // kalau berhasil alihkan ke halaman index.php dengan status=sukses
-		  header('Location: index.php?status=sukses');
-	  } else {
-		  // kalau gagal alihkan ke halaman indek.ph dengan status=gagal
-		  echo"gagal menghapus";
-	  }
- 
-} else {
-	die("Akses dilarang...");
-}
-?>
