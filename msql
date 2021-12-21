@@ -7,35 +7,35 @@ IDTutor INT NOT NULL,
 Nama_Tutor VARCHAR(20) NOT NULL,
 Waktu TIME,
 
-INSERT INTO Tutor VALUES('01A', 'Tony Stark',’16:00-22:00’);
-INSERT INTO Tutor VALUES('02A', 'Clint Barton',’16:00-22:00’);
-INSERT INTO Tutor VALUES('03A', 'Vision',’16:00-22:00’);
-INSERT INTO Tutor VALUES('04A', 'Nick Furry',’15:00-21:00’);
-INSERT INTO Tutor VALUES('05A', 'Shuri',’15:00-21:00’);
-INSERT INTO Tutor VALUES('06B', 'Natasha Romanoff',’16:00-22:00’);
-INSERT INTO Tutor VALUES('07B', 'James Rhodes',’16:00-22:00’);
-INSERT INTO Tutor VALUES('08B', 'Peter Quill',’15:00-21:00’);
-INSERT INTO Tutor VALUES('09B', 'Gamora',’14:00-20:00’);
-INSERT INTO Tutor VALUES('10B', 'Groot',’15:00-21:00’);
-INSERT INTO Tutor VALUES('11C', 'Thor Odinson',’16:00-22:00’);
-INSERT INTO Tutor VALUES('12C', 'Wanda Maximoff',’15:00-21:00’);
-INSERT INTO Tutor VALUES('13C', 'Bucky Barnes',’16:00-22:00’);
-INSERT INTO Tutor VALUES('14C', 'Carol Danvers',’16:00-22:00’);
-INSERT INTO Tutor VALUES('15C', 'Drax',’15:00-21:00’);
-INSERT INTO Tutor VALUES('16D', 'Steve Rogers',’16:00-22:00’);
-INSERT INTO Tutor VALUES('17D', 'Peter Parker',’14:00-20:00’);
-INSERT INTO Tutor VALUES('18D', 'Yelena Belova',’16:00-22:00’);
-INSERT INTO Tutor VALUES('19D', 'Maria Hill',’15:00-21:00’);
-INSERT INTO Tutor VALUES('20D', 'Okoye',’16:00-22:00’);
-INSERT INTO Tutor VALUES('21E', 'Bruce Banner',’16:00-22:00’);
-INSERT INTO Tutor VALUES('22E', 'Mantis',’15:00-21:00’);
-INSERT INTO Tutor VALUES('23E', 'Stephen Strange',’15:00-21:00’);
-INSERT INTO Tutor VALUES('24E', 'Pietro Maximoff',’16:00-22:00’);
-INSERT INTO Tutor VALUES('25E', 'Loki Odinson',’14:00-20:00’);
-INSERT INTO Tutor VALUES('26F', 'Sam Wilson',’16:00-22:00’);
-INSERT INTO Tutor VALUES('27F', 'Rocket',’15:00-21:00’);
-INSERT INTO Tutor VALUES('28F', 'Nebula',’16:00-22:00’);
-INSERT INTO Tutor VALUES('29F', 'T’Challa',’15:00-21:00’);
-INSERT INTO Tutor VALUES('30F', 'Scott Lang',’16:00-22:00’);
+INSERT INTO Tutor VALUES('01A','Matematika','Tony Stark',’16:00-22:00’);
+INSERT INTO Tutor VALUES('02A','Matematika','Clint Barton',’16:00-22:00’);
+INSERT INTO Tutor VALUES('03A','Matematika','Vision',’16:00-22:00’);
+INSERT INTO Tutor VALUES('04A','Matematika','Nick Furry',’15:00-21:00’);
+INSERT INTO Tutor VALUES('05A','Matematika','Shuri',’15:00-21:00’);
+INSERT INTO Tutor VALUES('06B','Bahasa Indonesia','Natasha Romanoff',’16:00-22:00’);
+INSERT INTO Tutor VALUES('07B','Bahasa Indonesia','James Rhodes',’16:00-22:00’);
+INSERT INTO Tutor VALUES('08B','Bahasa Indonesia','Peter Quill',’15:00-21:00’);
+INSERT INTO Tutor VALUES('09B','Bahasa Indonesia','Gamora',’14:00-20:00’);
+INSERT INTO Tutor VALUES('10B','Bahasa Indonesia','Groot',’15:00-21:00’);
+INSERT INTO Tutor VALUES('11C','Bahasa Inggris','Thor Odinson',’16:00-22:00’);
+INSERT INTO Tutor VALUES('12C','Bahasa Inggris','Wanda Maximoff',’15:00-21:00’);
+INSERT INTO Tutor VALUES('13C','Bahasa Inggris','Bucky Barnes',’16:00-22:00’);
+INSERT INTO Tutor VALUES('14C','Bahasa Inggris','Carol Danvers',’16:00-22:00’);
+INSERT INTO Tutor VALUES('15C','Bahasa Inggris','Drax',’15:00-21:00’);
+INSERT INTO Tutor VALUES('16D','Kimia','Steve Rogers',’16:00-22:00’);
+INSERT INTO Tutor VALUES('17D','Kimia','Peter Parker',’14:00-20:00’);
+INSERT INTO Tutor VALUES('18D','Kimia','Yelena Belova',’16:00-22:00’);
+INSERT INTO Tutor VALUES('19D','Kimia','Maria Hill',’15:00-21:00’);
+INSERT INTO Tutor VALUES('20D','Kimia','Okoye',’16:00-22:00’);
+INSERT INTO Tutor VALUES('21E','Biologi','Bruce Banner',’16:00-22:00’);
+INSERT INTO Tutor VALUES('22E','Biologi','Mantis',’15:00-21:00’);
+INSERT INTO Tutor VALUES('23E','Biologi','Stephen Strange',’15:00-21:00’);
+INSERT INTO Tutor VALUES('24E','Biologi','Pietro Maximoff',’16:00-22:00’);
+INSERT INTO Tutor VALUES('25E','Biologi','Loki Odinson',’14:00-20:00’);
+INSERT INTO Tutor VALUES('26F','Fisika','Sam Wilson',’16:00-22:00’);
+INSERT INTO Tutor VALUES('27F','Fisika','Rocket',’15:00-21:00’);
+INSERT INTO Tutor VALUES('28F','Fisika','Nebula',’16:00-22:00’);
+INSERT INTO Tutor VALUES('29F','Fisika','T’Challa',’15:00-21:00’);
+INSERT INTO Tutor VALUES('30F','Fisika','Scott Lang',’16:00-22:00’);
 
 
