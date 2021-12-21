@@ -125,3 +125,65 @@ section#image_hero{
 .about_us .body {
     margin-top: 65px;
 }
+
+
+
+.container.daftar{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.daftar .left, .daftar .right{
+    padding: 75px 83px;
+    display: flex;
+    justify-content: center; 
+}
+.left h1 {
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 116px;
+}
+
+.left hr {
+    border-top: 3px solid black;
+    margin: 59px 0;
+}
+
+.left .form-group {
+    margin-bottom: 20px;
+}
+
+.left label {
+    display: block;
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 400;
+}
+
+.left input, .left select {
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 100%;
+    padding:15px 15px;
+    font-size: 34px;
+}
+
+.left button {
+    margin-top: 20px;
+    background: #000000;
+    color: white;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 100%;
+    padding:15px 15px;
+    font-size: 34px;
+}
+
+.daftar .right {
+    background-color: #37B3E9;
+}
