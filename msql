@@ -56,4 +56,5 @@ INSERT INTO Tutor VALUES('28F','Fisika','Nebula','16:00','22:00');
 INSERT INTO Tutor VALUES('29F','Fisika','TChalla','15:00','21:00');
 INSERT INTO Tutor VALUES('30F','Fisika','Scott Lang','16:00','22:00');
 
-
+alter table tutor rename column mulai to start;
+alter table tutor rename column selesai to finish;
