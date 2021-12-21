@@ -10,7 +10,8 @@ idtutor CHAR(10) NOT NULL,
 namamatkul VARCHAR(100) NOT NULL,
 namatutor VARCHAR(100) NOT NULL,
 mulai TIME,
-selesai TIME);
+selesai TIME,
+CONSTRAINT tutor_idtutor_PK PRIMARY KEY(idtutor));
 
 CREATE TABLE mahasiswa(
 NIM CHAR(255) NOT NULL,
